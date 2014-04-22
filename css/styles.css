@@ -265,7 +265,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Plantin", "Times New Roman", Times, serif;
+  font-family: "freeserif", "Times New Roman", Times, serif;
   font-size: 12px;
   line-height: 1.42857143;
   color: #333333;
@@ -5772,12 +5772,24 @@ button.close {
     display: none !important;
   }
 }
+@font-face {
+  font-family: freeserifi;
+  src: url('/type/freeserifi.ttf'), url('/type/freeserifi.eot');
+  
+  /* IE9 */
+}
+@font-face {
+  font-family: freeserif;
+  src: url('/type/freeserif.ttf'), url('/type/freeserif.eot');
+  
+  /* IE9 */
+}
 body {
   text-rendering: optimizeLegibility;
   line-height: 1.557;
 }
 h1 {
-  font-family: "Plantin MT std", serif;
+  font-family: "freeserifi", serif;
   text-align: center;
   min-width: 350px;
 }
