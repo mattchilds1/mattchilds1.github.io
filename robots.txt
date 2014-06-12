@@ -1,0 +1,5 @@
+# mattc.co robots.txt
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Sitemap: http://mattc.co/sitemap.xml
