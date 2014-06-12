@@ -1,6 +1,44 @@
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+
+@font-face {
+    font-family: 'Mono Social Icons Font';
+    src: url('http://mattc.co/social-icons/MonoSocialIconsFont-1.10.eot');
+    src: url('http://mattc.co/social-icons/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
+         url('http://mattc.co/social-icons/MonoSocialIconsFont-1.10.woff') format('woff'),
+         url('http://mattc.co/social-icons/MonoSocialIconsFont-1.10.ttf') format('truetype'),
+         url('http://mattc.co/social-icons/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+    src: url('http://mattc.co/social-icons/MonoSocialIconsFont-1.10.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.symbol, a.symbol:before {
+    font-family: 'Mono Social Icons Font';
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+a.symbol:before {
+    content: attr(title);
+    font-size: 130%;
+}
+
+footer .symbol {
+  font-size: 60px;
+}
+          
+
+
 html {
-  font-family: sans-serif;
+  font-family: "utopia-std", serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -5772,24 +5810,24 @@ button.close {
     display: none !important;
   }
 }
-@font-face {
-  font-family: freeserifi;
-  src: url('/type/freeserifi.ttf'), url('/type/freeserifi.eot');
-  
-  /* IE9 */
+@media (min-width: 992px) {
+  .col-md-offset-8 {
+    margin-left: 62.46666667%;
+  }
 }
-@font-face {
-  font-family: freeserif;
-  src: url('/type/freeserif.ttf'), url('/type/freeserif.eot');
-  
-  /* IE9 */
+html {
+  height: 100%;
 }
 body {
   text-rendering: optimizeLegibility;
   line-height: 1.557;
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+  font-family: "utopia-std", serif;
 }
 h1 {
-  font-family: "freeserifi", serif;
+  font-family: "utopia-std", serif;
+  font-style: italic;
   text-align: center;
 }
 hr {
@@ -5811,10 +5849,280 @@ hr {
   display: block;
   margin: 0 auto;
 }
+
+.jumbotron {
+  margin-bottom: 0px;
+}
 .jumbotron h1,
-.h1 {
+.mc-body .h1 {
   font-size: 51.6px;
 }
+.mc-body h2 {
+  font-size: 35px;
+}
+.mc-body h3 {
+  font-size: 35px;
+}
 .mc-sub {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  line-height: 1.7;
+letter-spacing: 0.06rem;
+padding-left: 40px;
+padding-right: 40px;
+}
+.mc-top-header {
+  height: 70px;
+}
+.mc-top-header nav {
+  margin-top: 17px;
+}
+.mc-top-header nav {
+  text-align: center;
+  font-size: 25px;
+}
+.mc-top-header nav a {
+  margin-left: -23px;
+  font-size: 25px;
+}
+.mc-non-homepage h1 {
+  text-align: left;
+  font-size: 51.6px;
+}
+.mc-non-homepage {
+  background-color: #f6f3f2;
+}
+
+footer {
+  background-color: #eeeeee;
+  margin-top: 50px;
+  bottom: 0;
+  width: 100%;
+}
+
+footer .copywright {
+  padding-top: 30px;
+}
+
+.mc-non-homepage p:first-of-type {
+  padding-top: 10px;
+}
+#portfolio-container {
+  margin-top: 50px;
+}
+
+.portfolio-inner {
+  background-color: grey; min-height: 241px; padding: 40px;
+}
+
+.portfolio-inner div {
+  position: absolute;
+top: 0;
+left: 15px;
+padding: 20px;
+padding-left: 40px;
+background-color: rgba(0, 0, 0, 0.5);
+width: 360px;
+color: white;
+font-size: 15px;
+font-family: "futura-pt",sans-serif;
+}
+.portfolio-inner div a {
+font-size: 20px;
+color: white;
+}
+.portfolio-inner div a:hover {
+font-size: 20px;
+color: white;
+}
+
+.portfolio-row {
+  margin-top: 30px;
+}
+
+.mc-non-homepage h1 {
+  text-align: left;
+  font-size: 51.6px;
+}
+
+.portfolio-article {
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+.portfolio-article .role {
+font-family: "futura-pt",sans-serif !important;
+border-bottom: 1px solid black;
+padding-bottom: 10px;
+margin-top: 50px;
+color: grey;
+  font-weight: 500;
+  font-size: 15px;
+
+}
+
+.portfolio-article h2 {
+  border-top: 5px solid black;
+margin-top: 0;
+padding-top: 10px;
+}
+
+.project-description {
+    margin-bottom: 40px;
+    line-height: 1.7;
+    letter-spacing: 0.03rem;
+}
+
+.project-description p {
+  padding-right:80px;
+}
+
+.portfolio-right {
+  text-align: left;
+}
+.portfolio-right img {
+box-shadow: 5px 5px 2.5px 0px rgba(0,0,0,0.35);
+}
+
+.portfolio-left {
+  margin-bottom: 50px;
+}
+
+.portfolio-controls {
+margin-top: 30px;
+padding-right: 10px;
+font-family: "futura-pt",sans-serif;
+font-size: 15px;
+font-weight: 300;
+}
+
+.portfolio-controls a {
+  color: #000;
+
+}
+
+.portfolio-article-outsidelink {
+width: 250px;
+text-align: Center;
+padding: 16px;
+border: 1px solid #000;
+color: #000;
+font-family: "futura-pt",sans-serif;
+font-style: normal;
+font-weight: 100;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+font-size: 14px;
+line-height: normal;
+text-transform: uppercase;
+letter-spacing: 0.2REM;
+}
+
+.portfolio-article a:hover {
+  text-decoration: none; 
+}
+
+
+.portfolio-inner2 {
+
+}
+
+.portfolio-inner2 a {
+  color: #000;
+  font-size: 30px;
+}
+.portfolio-inner2 h1 {
+color: #000;
+font-size: 30px;
+text-align: left;
+font-style: normal;
+margin-top: 5px;
+}
+.portfolio-inner2 p {
+  font-family: "futura-pt",sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: grey;
+}
+.portfolio-inner2 div {
+  border-top: 5px solid black;
+padding-top: 10px;
+margin-top: 20px;
+}
+
+
+.social-footer {
+  text-align: right;
+}
+
+.social-footer a:hover {
+  background-color: #25408F;
+  color: #eeeeee;
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+.avo-mobile-first {
+  margin-bottom: 20px;
+}
+
+footer {
+  height: auto !important;
+}
+.portfolio-row {
+margin-top: 0px !important;
+}
+
+}
+
+.hi-unit {
+  font-family: "futura-pt",sans-serif;
+  font-weight: 400 !important;
+}
+
+.mc-homepage h3 {
+  margin-top: 50px;
+}
+
+.description {
+  color: #000 !important;
+font-weight: normal !important;
+font-family: "utopia-std", serif !important;
+width: 70%;
+}
+
+.mc-top-bar {
+  height:23px; 
+  background-image: url('/bgtop.png');
+}
+
+.mc-home-page-spans {
+  display:block; 
+  padding-top:110px;
+}
+
+.portfolio-control-1 {
+padding-right: 40px;
+}
+.portfolio-control-2 {
+padding-left:20px;
+}
+.portfolio-control-3 {
+  padding-right:20px
+}
+.portfolio-control-4 {
+ padding-left:40px; 
+}
+.portfolio-control-5 {
+  padding-right:20px;
+}
+
+span[itemprop="name"] a {
+  color: #000;
+}
+span[itemprop="name"] a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+aside {
+font-family: "futura-pt",sans-serif;
 }
