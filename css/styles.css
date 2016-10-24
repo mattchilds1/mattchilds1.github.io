@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: 'Mono Social Icons Font';
-    src: url('http://mattc.co/social-icons/MonoSocialIconsFont-1.10.eot');
-    src: url('http://mattc.co/social-icons/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
-         url('http://mattc.co/social-icons/MonoSocialIconsFont-1.10.woff') format('woff'),
-         url('http://mattc.co/social-icons/MonoSocialIconsFont-1.10.ttf') format('truetype'),
-         url('http://mattc.co/social-icons/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
-    src: url('http://mattc.co/social-icons/MonoSocialIconsFont-1.10.ttf') format('truetype');
+    src: url('http://mattchilds1.github.io/social-icons/MonoSocialIconsFont-1.10.eot');
+    src: url('http://mattchilds1.github.io/social-icons/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
+         url('http://mattchilds1.github.io/social-icons/MonoSocialIconsFont-1.10.woff') format('woff'),
+         url('http://mattchilds1.github.io/social-icons/MonoSocialIconsFont-1.10.ttf') format('truetype'),
+         url('http://mattchilds1.github.io/social-icons/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+    src: url('http://mattchilds1.github.io/social-icons/MonoSocialIconsFont-1.10.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
