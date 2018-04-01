@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: 'Mono Social Icons Font';
-    src: url('http://mattchilds1.github.io/social-icons/MonoSocialIconsFont-1.10.eot');
-    src: url('http://mattchilds1.github.io/social-icons/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
-         url('http://mattchilds1.github.io/social-icons/MonoSocialIconsFont-1.10.woff') format('woff'),
-         url('http://mattchilds1.github.io/social-icons/MonoSocialIconsFont-1.10.ttf') format('truetype'),
-         url('http://mattchilds1.github.io/social-icons/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
-    src: url('http://mattchilds1.github.io/social-icons/MonoSocialIconsFont-1.10.ttf') format('truetype');
+    src: url('http://www.mattchilds.xyz/social-icons/MonoSocialIconsFont-1.10.eot');
+    src: url('http://www.mattchilds.xyz/social-icons/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
+         url('http://www.mattchilds.xyz/social-icons/MonoSocialIconsFont-1.10.woff') format('woff'),
+         url('http://www.mattchilds.xyz/social-icons/MonoSocialIconsFont-1.10.ttf') format('truetype'),
+         url('http://www.mattchilds.xyz/social-icons/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+    src: url('http://www.mattchilds.xyz/social-icons/MonoSocialIconsFont-1.10.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -40,7 +40,7 @@ footer .symbol {
   font-size: 24px;
 margin-right: 10px;
 }
-          
+
 
 
 html {
@@ -260,12 +260,14 @@ th {
   }
   p,
   h2,
-  h3 {
+  h3,
+  h4 {
     orphans: 3;
     widows: 3;
   }
   h2,
-  h3 {
+  h3,
+  h4 {
     page-break-after: avoid;
   }
   select {
@@ -6023,7 +6025,7 @@ letter-spacing: 0.2REM;
 
 
 .portfolio-article a:hover {
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 
@@ -6096,12 +6098,12 @@ width: 70%;
 }
 
 .mc-top-bar {
-  height:23px; 
+  height:23px;
   background-image: url('/bgtop.png');
 }
 
 .mc-home-page-spans {
-  display:block; 
+  display:block;
   padding-top:110px;
 }
 
@@ -6115,7 +6117,7 @@ padding-left:20px;
   padding-right:20px
 }
 .portfolio-control-4 {
- padding-left:40px; 
+ padding-left:40px;
 }
 .portfolio-control-5 {
   padding-right:20px;
