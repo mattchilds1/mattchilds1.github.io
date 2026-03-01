@@ -21,7 +21,10 @@
     <meta property="og:description" content="CTO. Builder." />
     <meta property="og:url" content="https://mattchilds.xyz/" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://avatars.githubusercontent.com/u/1014849?v=4&s=630" />
+    <meta
+      property="og:image"
+      content="https://avatars.githubusercontent.com/u/1014849?v=4&s=630"
+    />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:creator" content="@mattec" />
     <meta name="twitter:title" content="Matt Childs" />
@@ -44,7 +47,17 @@
       id="theme-toggle"
       aria-label="Toggle colour scheme"
     >
-      dark
+      <span class="theme-toggle-sun" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+        </svg>
+      </span>
+      <span class="theme-toggle-moon" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </span>
     </button>
     <main class="page">
       <div class="identity">
@@ -71,6 +84,9 @@
       <section aria-label="Experience">
         <ul class="exp-list">
           <li class="exp-row">
+            <a href="https://www.myclientshare.com/" target="_blank" rel="noopener noreferrer" class="exp-logo-wrap">
+              <img src="assets/clientshare.jpeg" alt="" class="exp-logo" width="40" height="40" />
+            </a>
             <span class="exp-role"
               >Chief Technology Officer,
               <em class="exp-company"
@@ -85,6 +101,9 @@
             <span class="exp-dates">2024–2026</span>
           </li>
           <li class="exp-row">
+            <a href="https://www.upp.ai/" target="_blank" rel="noopener noreferrer" class="exp-logo-wrap">
+              <img src="assets/upp.jpeg" alt="" class="exp-logo" width="40" height="40" />
+            </a>
             <span class="exp-role"
               >VP of Engineering,
               <em class="exp-company"
@@ -97,6 +116,23 @@
               ></span
             >
             <span class="exp-dates">2019–2024</span>
+          </li>
+          <li class="exp-row">
+            <a href="https://www.slalom.com/" target="_blank" rel="noopener noreferrer" class="exp-logo-wrap">
+              <img src="assets/slalom.jpeg" alt="" class="exp-logo" width="40" height="40" />
+            </a>
+            <span class="exp-role"
+              >Senior Software Engineer,
+              <em class="exp-company"
+                ><a
+                  href="https://www.slalom.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Slalom</a
+                ></em
+              ></span
+            >
+            <span class="exp-dates">2015–2019</span>
           </li>
         </ul>
         <a
@@ -118,13 +154,9 @@
       </nav>
     </main>
     <script>
-      var btn = document.getElementById("theme-toggle");
-      btn.textContent =
-        document.documentElement.dataset.theme === "dark" ? "light" : "dark";
-      btn.addEventListener("click", function () {
+      document.getElementById("theme-toggle").addEventListener("click", function () {
         var isDark = document.documentElement.dataset.theme === "dark";
         document.documentElement.dataset.theme = isDark ? "light" : "dark";
-        btn.textContent = isDark ? "dark" : "light";
         localStorage.setItem("theme", isDark ? "light" : "dark");
       });
     </script>

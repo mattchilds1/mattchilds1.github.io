@@ -20,7 +20,10 @@
   <script>(function(){var t=localStorage.getItem('theme'),d=window.matchMedia('(prefers-color-scheme:dark)').matches;if(t==='dark'||(t===null&&d))document.documentElement.dataset.theme='dark';else if(t==='light')document.documentElement.dataset.theme='light';}());</script>
 </head>
 <body>
-  <button class="theme-toggle" id="theme-toggle" aria-label="Toggle colour scheme">dark</button>
+  <button class="theme-toggle" id="theme-toggle" aria-label="Toggle colour scheme">
+  <span class="theme-toggle-sun" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></span>
+  <span class="theme-toggle-moon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span>
+</button>
   <main class="page">
 
     <nav class="back-nav" aria-label="Back">
@@ -76,12 +79,9 @@
 
   </main>
   <script>
-    var btn=document.getElementById('theme-toggle');
-    btn.textContent=document.documentElement.dataset.theme==='dark'?'light':'dark';
-    btn.addEventListener('click',function(){
+    document.getElementById('theme-toggle').addEventListener('click',function(){
       var isDark=document.documentElement.dataset.theme==='dark';
       document.documentElement.dataset.theme=isDark?'light':'dark';
-      btn.textContent=isDark?'dark':'light';
       localStorage.setItem('theme',isDark?'light':'dark');
     });
   </script>
