@@ -1,7 +1,7 @@
 {
   "type": "module",
   "scripts": {
-    "sitemap": "sscli -b https://mattchilds.xyz -r . -f xml --no-clean -i 'node_modules/**' '.git/**'",
+    "sitemap": "sscli -b https://www.mattchilds.xyz -r . -f xml --no-clean -i 'node_modules/**' '.git/**'",
     "og": "node scripts/generate-og-images.js"
   },
   "dependencies": {
