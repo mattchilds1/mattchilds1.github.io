@@ -1,37 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<url>
-<loc>http://mattchilds.xyz/</loc>
-<lastmod>2018-03-12T08:44:43+00:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1.00</priority>
-</url>
-<url>
-<loc>http://mattchilds.xyz/matthewchilds.pdf</loc>
-<lastmod>2018-03-12T08:44:43+00:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>http://mattchilds.xyz/avocado/</loc>
-<lastmod>2018-03-12T08:44:43+00:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>http://mattchilds.xyz/memrise/</loc>
-<lastmod>2018-03-12T08:44:43+00:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>http://mattchilds.xyz/transport/</loc>
-<lastmod>2018-03-12T08:44:43+00:00</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.80</priority>
-</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://mattchilds.xyz/about.html</loc>
+        <lastmod>2026-03-01T10:20:09.029Z</lastmod>
+    </url>
+    <url>
+        <loc>https://mattchilds.xyz/index.html</loc>
+        <lastmod>2026-03-01T11:34:39.156Z</lastmod>
+    </url>
+    <url>
+        <loc>https://mattchilds.xyz/lists.html</loc>
+        <lastmod>2026-03-01T10:19:49.885Z</lastmod>
+    </url>
+    <url>
+        <loc>https://mattchilds.xyz/writing.html</loc>
+        <lastmod>2026-03-01T11:29:38.073Z</lastmod>
+    </url>
+    <url>
+        <loc>https://mattchilds.xyz/enriching-your-career-through-personal-interests/index.html</loc>
+        <lastmod>2026-03-01T10:20:10.521Z</lastmod>
+    </url>
+    <url>
+        <loc>https://mattchilds.xyz/my-thoughts-on-estimation-and-hitting-delivery-dates-in-software/index.html</loc>
+        <lastmod>2026-03-01T11:29:36.114Z</lastmod>
+    </url>
 </urlset>

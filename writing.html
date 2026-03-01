@@ -1,0 +1,97 @@
+<!doctype html>
+<!--
+ _____ ______   ________  _________  _________        ________  ___  ___  ___  ___       ________  ________
+|\   _ \  _   \|\   __  \|\___   ___\\___   ___\     |\   ____\|\  \|\  \|\  \|\  \     |\   ___ \|\   ____\
+\ \  \\\__\ \  \ \  \|\  \|___ \  \_\|___ \  \_|     \ \  \___|\ \  \\\  \ \  \ \  \    \ \  \_|\ \ \  \___|_
+ \ \  \\|__| \  \ \   __  \   \ \  \     \ \  \       \ \  \    \ \   __  \ \  \ \  \    \ \  \ \\ \ \_____  \
+  \ \  \    \ \  \ \  \ \  \   \ \  \     \ \  \       \ \  \____\ \  \ \  \ \  \ \  \____\ \  \_\\ \|____|\  \
+   \ \__\    \ \__\ \__\ \__\   \ \__\     \ \__\       \ \_______\ \__\ \__\ \__\ \_______\ \_______\____\_\  \
+    \|__|     \|__|\|__|\|__|    \|__|      \|__|        \|_______|\|__|\|__|\|__|\|_______|\|_______|\_________\
+                                                                                                     \|_________|
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Writing — Matt Childs</title>
+    <meta name="description" content="Writing by Matt Childs" />
+    <link rel="canonical" href="https://mattchilds.xyz/writing.html" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="alternate" type="application/rss+xml" title="Matt Childs — Writing" href="https://mattchilds.xyz/feed.xml" />
+    <meta property="og:title" content="Writing — Matt Childs" />
+    <meta property="og:description" content="Writing by Matt Childs" />
+    <meta property="og:url" content="https://mattchilds.xyz/writing.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/1014849?v=4&s=630" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:creator" content="@mattec" />
+    <meta name="twitter:title" content="Writing — Matt Childs" />
+    <meta name="twitter:description" content="Writing by Matt Childs" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script>
+      (function () {
+        var t = localStorage.getItem("theme"),
+          d = window.matchMedia("(prefers-color-scheme:dark)").matches;
+        if (t === "dark" || (t === null && d))
+          document.documentElement.dataset.theme = "dark";
+        else if (t === "light")
+          document.documentElement.dataset.theme = "light";
+      })();
+    </script>
+  </head>
+  <body>
+    <button
+      class="theme-toggle"
+      id="theme-toggle"
+      aria-label="Toggle colour scheme"
+    >
+      dark
+    </button>
+    <main class="page">
+      <nav class="back-nav" aria-label="Back">
+        <a href="index.html">← Matt Childs</a>
+      </nav>
+
+      <h1 class="page-title">Writing</h1>
+      <p class="page-meta"><a href="/feed.xml">RSS</a></p>
+
+      <ul class="post-list">
+        <li>
+          <p class="post-title">
+            <a href="my-thoughts-on-estimation-and-hitting-delivery-dates-in-software/"
+              >My Thoughts on Estimation and Hitting Delivery Dates in Software</a
+            >
+          </p>
+          <p class="post-meta">LinkedIn · 2025</p>
+          <p class="post-desc">
+            Why software estimation is harder than construction, and when trust
+            grows in its place.
+          </p>
+        </li>
+        <li>
+          <p class="post-title">
+            <a href="enriching-your-career-through-personal-interests/"
+              >Enriching Your Career Through Your Personal Interests</a
+            >
+          </p>
+          <p class="post-meta">Medium · 2014</p>
+          <p class="post-desc">
+            What reading about urban planning taught me about working in
+            technology.
+          </p>
+        </li>
+      </ul>
+    </main>
+    <script>
+      var btn = document.getElementById("theme-toggle");
+      btn.textContent =
+        document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+      btn.addEventListener("click", function () {
+        var isDark = document.documentElement.dataset.theme === "dark";
+        document.documentElement.dataset.theme = isDark ? "light" : "dark";
+        btn.textContent = isDark ? "dark" : "light";
+        localStorage.setItem("theme", isDark ? "light" : "dark");
+      });
+    </script>
+  </body>
+</html>

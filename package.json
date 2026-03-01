@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "sitemap": "sscli -b https://mattchilds.xyz -r . -f xml --no-clean -i 'node_modules/**' '.git/**'"
+  },
+  "devDependencies": {
+    "static-sitemap-cli": "^2.2.7"
+  }
+}

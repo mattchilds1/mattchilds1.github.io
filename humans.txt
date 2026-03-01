@@ -1,0 +1,11 @@
+/* TEAM */
+Matt Childs: CTO
+Location: UK
+
+/* SITE */
+Last update: 2025
+Language: English
+Standards: HTML5, CSS3
+
+/* CONTACT */
+hello@mattchilds.xyz

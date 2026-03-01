@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Thoughts on Estimation and Hitting Delivery Dates in Software — Matt Childs</title>
+  <meta name="description" content="Why software estimation is harder than construction, and when trust grows in its place.">
+  <link rel="canonical" href="https://mattchilds.xyz/my-thoughts-on-estimation-and-hitting-delivery-dates-in-software/">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta property="og:title" content="My Thoughts on Estimation and Hitting Delivery Dates in Software — Matt Childs">
+  <meta property="og:description" content="Why software estimation is harder than construction, and when trust grows in its place.">
+  <meta property="og:url" content="https://mattchilds.xyz/my-thoughts-on-estimation-and-hitting-delivery-dates-in-software/">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/1014849?v=4&s=630">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:creator" content="@mattec">
+  <meta name="twitter:title" content="My Thoughts on Estimation and Hitting Delivery Dates in Software">
+  <meta name="twitter:description" content="Why software estimation is harder than construction, and when trust grows in its place.">
+  <link rel="stylesheet" href="../css/styles.css">
+  <script>(function(){var t=localStorage.getItem('theme'),d=window.matchMedia('(prefers-color-scheme:dark)').matches;if(t==='dark'||(t===null&&d))document.documentElement.dataset.theme='dark';else if(t==='light')document.documentElement.dataset.theme='light';}());</script>
+</head>
+<body>
+  <button class="theme-toggle" id="theme-toggle" aria-label="Toggle colour scheme">dark</button>
+  <main class="page">
+
+    <nav class="back-nav" aria-label="Back">
+      <a href="../writing.html">← Writing</a>
+    </nav>
+
+    <article>
+      <h1 class="page-title">My Thoughts on Estimation and Hitting Delivery Dates in Software</h1>
+      <p class="article-meta">Originally on <a href="https://www.linkedin.com/feed/update/urn:li:activity:7389589751084883968/" target="_blank" rel="noopener">LinkedIn</a> · 2025</p>
+
+      <div class="prose">
+        <p>I completely empathise with the frustration many non-technical leaders feel when software teams can't give a clear delivery date.</p>
+
+        <p>In most other industries, you can see progress. A building goes up brick by brick; you can touch it, measure it, and know when it's nearly done. Software doesn't work like that. Most of the progress is invisible until very late. The foundations (architecture, data models, testing, performance, security) are hidden beneath the surface.</p>
+
+        <p>That's part of what Fred Brooks (Author: The Mythical Man Month) called the "intangibility problem" and it leads to what I think of as the software construction fallacy: the assumption that building software is like building a house. It's not. It's far closer to research and design than to construction.</p>
+
+        <p>And to be fair, even the construction world struggles. Studies show only about 25–30% of large construction projects finish on time and on budget <a href="https://lnkd.in/e2_-8Fcy" target="_blank" rel="noopener">[1]</a>. In IT and software, it's similar around 30% succeed fully <a href="https://lnkd.in/ehwTzVJj" target="_blank" rel="noopener">[2]</a>, the rest overrun or change scope. We've all seen Grand Designs: projects running late, costs ballooning, compromises creeping in… and occasionally, someone key to the delivery gets pregnant halfway through the build!</p>
+
+        <p>Predictable delivery dates are possible but only for small, repeatable efforts. The irony is that those efforts rarely move the needle. If the work is fully known and easy to estimate, it's probably already been done before, or could be done by anyone.</p>
+
+        <p>The real value — the kind that creates new markets, or transforms how customers work — comes from making something from nothing. That's innovation. And by definition, innovation lives in the space of unknown unknowns: learning what works, adapting, discovering. You can't schedule discovery with precision.</p>
+
+        <p>So while I empathise deeply with the desire for predictability (and we should always improve how we communicate progress and reduce uncertainty), I also think we need to celebrate the other side of the equation: that we're in the business of R&D, invention, and value creation not just project management.</p>
+
+        <p>Over time I've found something interesting: once a team is clearly delivering value, solving real problems, and focusing only on the most important thing next, people stop fixating on dates. Trust grows. Outcomes start to speak louder than estimates.</p>
+
+        <p>Because at that point, everyone can see the momentum even if they can't see the brickwork.</p>
+
+        <p>Curious to hear from others: when have you seen a team shift the conversation from "when will it be done?" to "what are we learning and delivering next?"</p>
+      </div>
+    </article>
+
+    <footer class="page-footer">
+      <a href="mailto:hello@mattchilds.xyz">hello@mattchilds.xyz</a>
+    </footer>
+
+  </main>
+  <script>
+    var btn=document.getElementById('theme-toggle');
+    btn.textContent=document.documentElement.dataset.theme==='dark'?'light':'dark';
+    btn.addEventListener('click',function(){
+      var isDark=document.documentElement.dataset.theme==='dark';
+      document.documentElement.dataset.theme=isDark?'light':'dark';
+      btn.textContent=isDark?'dark':'light';
+      localStorage.setItem('theme',isDark?'light':'dark');
+    });
+  </script>
+</body>
+</html>

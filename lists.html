@@ -1,0 +1,119 @@
+<!doctype html>
+<!--
+ _____ ______   ________  _________  _________        ________  ___  ___  ___  ___       ________  ________
+|\   _ \  _   \|\   __  \|\___   ___\\___   ___\     |\   ____\|\  \|\  \|\  \|\  \     |\   ___ \|\   ____\
+\ \  \\\__\ \  \ \  \|\  \|___ \  \_\|___ \  \_|     \ \  \___|\ \  \\\  \ \  \ \  \    \ \  \_|\ \ \  \___|_
+ \ \  \\|__| \  \ \   __  \   \ \  \     \ \  \       \ \  \    \ \   __  \ \  \ \  \    \ \  \ \\ \ \_____  \
+  \ \  \    \ \  \ \  \ \  \   \ \  \     \ \  \       \ \  \____\ \  \ \  \ \  \ \  \____\ \  \_\\ \|____|\  \
+   \ \__\    \ \__\ \__\ \__\   \ \__\     \ \__\       \ \_______\ \__\ \__\ \__\ \_______\ \_______\____\_\  \
+    \|__|     \|__|\|__|\|__|    \|__|      \|__|        \|_______|\|__|\|__|\|__|\|_______|\|_______|\_________\
+                                                                                                     \|_________|
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lists — Matt Childs</title>
+    <meta name="description" content="Things Matt Childs recommends" />
+    <link rel="canonical" href="https://mattchilds.xyz/lists.html" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <meta property="og:title" content="Lists — Matt Childs" />
+    <meta property="og:description" content="Things Matt Childs recommends" />
+    <meta property="og:url" content="https://mattchilds.xyz/lists.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/1014849?v=4&s=630" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:creator" content="@mattec" />
+    <meta name="twitter:title" content="Lists — Matt Childs" />
+    <meta name="twitter:description" content="Things Matt Childs recommends" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script>
+      (function () {
+        var t = localStorage.getItem("theme"),
+          d = window.matchMedia("(prefers-color-scheme:dark)").matches;
+        if (t === "dark" || (t === null && d))
+          document.documentElement.dataset.theme = "dark";
+        else if (t === "light")
+          document.documentElement.dataset.theme = "light";
+      })();
+    </script>
+  </head>
+  <body>
+    <button
+      class="theme-toggle"
+      id="theme-toggle"
+      aria-label="Toggle colour scheme"
+    >
+      dark
+    </button>
+    <main class="page">
+      <nav class="back-nav" aria-label="Back">
+        <a href="index.html">← Matt Childs</a>
+      </nav>
+
+      <h1 class="page-title">Lists</h1>
+
+      <div class="list-section">
+        <p class="list-label">Coffee</p>
+        <ul class="list-items">
+          <li class="list-item">
+            <p class="list-item-name"><a href="#">Origin Roasters</a></p>
+            <p class="list-item-desc">
+              London-based specialty roaster with a focus on Ethiopian and
+              Colombian origins.
+            </p>
+          </li>
+          <li class="list-item">
+            <p class="list-item-name"><a href="#">James Gourmet Coffee</a></p>
+            <p class="list-item-desc">
+              Small-batch roaster from Ross-on-Wye, known for nuanced,
+              fruit-forward profiles.
+            </p>
+          </li>
+          <li class="list-item">
+            <p class="list-item-name"><a href="#">Assembly Coffee</a></p>
+            <p class="list-item-desc">
+              Brixton-born roaster committed to direct trade and seasonal lots.
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="list-section">
+        <p class="list-label">Products</p>
+        <ul class="list-items">
+          <li class="list-item">
+            <p class="list-item-name"><a href="#">Aeropress</a></p>
+            <p class="list-item-desc">
+              The most forgiving and rewarding way to brew coffee at home.
+            </p>
+          </li>
+          <li class="list-item">
+            <p class="list-item-name"><a href="#">Fellow Stagg EKG</a></p>
+            <p class="list-item-desc">
+              A variable-temperature kettle that makes the morning ritual feel
+              intentional.
+            </p>
+          </li>
+          <li class="list-item">
+            <p class="list-item-name"><a href="#">Monocle Magazine</a></p>
+            <p class="list-item-desc">
+              Monthly dose of international perspective and considered design.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <script>
+      var btn = document.getElementById("theme-toggle");
+      btn.textContent =
+        document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+      btn.addEventListener("click", function () {
+        var isDark = document.documentElement.dataset.theme === "dark";
+        document.documentElement.dataset.theme = isDark ? "light" : "dark";
+        btn.textContent = isDark ? "dark" : "light";
+        localStorage.setItem("theme", isDark ? "light" : "dark");
+      });
+    </script>
+  </body>
+</html>

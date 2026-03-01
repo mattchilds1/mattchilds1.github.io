@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Matt Childs — Writing</title>
+    <link>https://mattchilds.xyz/writing.html</link>
+    <description>Writing by Matt Childs on software, leadership, and technology</description>
+    <language>en</language>
+    <atom:link href="https://mattchilds.xyz/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>My Thoughts on Estimation and Hitting Delivery Dates in Software</title>
+      <link>https://mattchilds.xyz/my-thoughts-on-estimation-and-hitting-delivery-dates-in-software/</link>
+      <description>Why software estimation is harder than construction, and when trust grows in its place.</description>
+      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mattchilds.xyz/my-thoughts-on-estimation-and-hitting-delivery-dates-in-software/</guid>
+    </item>
+    <item>
+      <title>Enriching Your Career Through Your Personal Interests</title>
+      <link>https://mattchilds.xyz/enriching-your-career-through-personal-interests/</link>
+      <description>What reading about urban planning taught me about working in technology.</description>
+      <pubDate>Fri, 01 Aug 2014 00:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://mattchilds.xyz/enriching-your-career-through-personal-interests/</guid>
+    </item>
+  </channel>
+</rss>
