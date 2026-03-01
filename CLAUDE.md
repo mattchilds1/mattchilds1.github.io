@@ -10,10 +10,11 @@ No build step. Push to `master` branch → GitHub Pages serves it live at `mattc
 git push origin master
 ```
 
-Before deploying, regenerate sitemap (`robots.txt` is static):
+Before deploying, regenerate sitemap and OG images:
 
 ```bash
 npm run sitemap
+npm run og
 ```
 
 Preview locally with any static server:
@@ -46,6 +47,8 @@ Single-page static site. The only file that matters for content is `index.html`.
 
 **Files in active use:**
 
+- `scripts/generate-og-images.js` — generates static OG images (Satori + Sharp) for each page
+- `og-images/` — generated PNGs (run `npm run og` before deploy)
 - `index.html` — main page
 - `css/styles.css` — all styles (currently includes bundled normalize.css + custom styles)
 - `CNAME` — sets custom domain (`mattchilds.xyz`)

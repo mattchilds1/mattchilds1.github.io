@@ -1,6 +1,13 @@
 {
+  "type": "module",
   "scripts": {
-    "sitemap": "sscli -b https://mattchilds.xyz -r . -f xml --no-clean -i 'node_modules/**' '.git/**'"
+    "sitemap": "sscli -b https://mattchilds.xyz -r . -f xml --no-clean -i 'node_modules/**' '.git/**'",
+    "og": "node scripts/generate-og-images.js"
+  },
+  "dependencies": {
+    "@fontsource/eb-garamond": "^5.2.7",
+    "satori": "^0.12.2",
+    "sharp": "^0.33.5"
   },
   "devDependencies": {
     "static-sitemap-cli": "^2.2.7"
