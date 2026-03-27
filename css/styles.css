@@ -125,7 +125,9 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-  transition: text-decoration-color var(--ease), opacity var(--ease);
+  transition:
+    text-decoration-color var(--ease),
+    opacity var(--ease);
 }
 a:hover {
   text-decoration: underline;
@@ -155,12 +157,38 @@ a:hover {
   flex-direction: column;
 }
 
-.avatar {
-  width: var(--sp12);
-  height: var(--sp12);
-  border-radius: var(--radius-squircle);
-  object-fit: cover;
+.avatar-wrap {
+  position: relative;
+  width: calc(var(--sp12) * 3);
+  height: calc(var(--sp12) * 3);
   margin-bottom: var(--sp4);
+  clip-path: url(#avatar-clip);
+}
+
+.avatar {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: opacity 0.4s ease;
+}
+
+.avatar-photo {
+  opacity: 1;
+}
+
+.avatar-illustration {
+  opacity: 0;
+}
+
+.avatar-wrap:hover .avatar-photo {
+  opacity: 0;
+}
+
+.avatar-wrap:hover .avatar-illustration {
+  opacity: 1;
 }
 
 .identity-name {
@@ -192,7 +220,9 @@ a:hover {
   font-size: var(--sm);
   color: var(--muted);
   text-decoration: none;
-  transition: color var(--ease), text-decoration-color var(--ease);
+  transition:
+    color var(--ease),
+    text-decoration-color var(--ease);
 }
 .social-links a:hover {
   color: var(--text);
@@ -251,7 +281,9 @@ a:hover {
   text-decoration: underline;
   text-decoration-color: var(--border);
   text-underline-offset: var(--sp1);
-  transition: text-decoration-color var(--ease), color var(--ease);
+  transition:
+    text-decoration-color var(--ease),
+    color var(--ease);
 }
 .exp-company a:hover {
   color: var(--text);
@@ -296,7 +328,9 @@ a:hover {
   font-size: var(--sm);
   color: var(--muted);
   text-decoration: none;
-  transition: color var(--ease), text-decoration-color var(--ease);
+  transition:
+    color var(--ease),
+    text-decoration-color var(--ease);
 }
 .page-nav a:hover {
   color: var(--text);
@@ -362,6 +396,66 @@ a:hover {
   margin-top: var(--sp3);
 }
 
+/* Prose table: compact, readable */
+.table-wrap {
+  overflow-x: auto;
+  margin: var(--sp6) 0;
+}
+.inertia-table {
+  width: 100%;
+  font-size: 0.8125rem; /* slightly smaller than --sm */
+  line-height: 1.5;
+  border-collapse: collapse;
+}
+.inertia-table th,
+.inertia-table td {
+  padding: var(--sp2) var(--sp3);
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+.inertia-table thead th {
+  font-family: var(--font-ui);
+  font-size: var(--xs);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--subtle);
+  font-weight: 400;
+  padding-bottom: var(--sp2);
+}
+.inertia-table tbody th {
+  font-weight: 500;
+  color: var(--text);
+  padding-right: var(--sp4);
+}
+.inertia-table tbody td:first-of-type {
+  font-weight: 500;
+  color: var(--text);
+}
+.inertia-table tbody td:last-child {
+  color: var(--muted);
+}
+.article-figure {
+  margin: var(--sp8) 0;
+}
+/* Table figure: stretch wider than prose column, slightly smaller type */
+.article-figure .table-wrap {
+  margin-top: 0;
+  margin-bottom: var(--sp3);
+  --table-width: 700px;
+  width: calc(100% + (var(--table-width) - var(--max)));
+  margin-left: calc(-1 * (var(--table-width) - var(--max)) / 2);
+  margin-right: calc(-1 * (var(--table-width) - var(--max)) / 2);
+}
+.article-figure figcaption {
+  font-size: var(--xs);
+  color: var(--subtle);
+  font-family: var(--font-ui);
+}
+.article-figure figcaption a {
+  color: var(--subtle);
+}
+
 .article-meta {
   font-family: var(--font-ui);
   font-size: var(--xs);
@@ -386,7 +480,9 @@ a:hover {
   text-decoration: underline;
   text-decoration-color: var(--border);
   text-underline-offset: var(--sp1);
-  transition: text-decoration-color var(--ease), color var(--ease);
+  transition:
+    text-decoration-color var(--ease),
+    color var(--ease);
 }
 .page-meta a:hover {
   color: var(--text);
